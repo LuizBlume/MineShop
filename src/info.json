@@ -1,0 +1,9 @@
+[
+    {
+        "name": "ChatGPT",
+        "description": "ChatGPT is a large language model developed by OpenAI. It is designed to understand and generate human-like text based on the input it receives. ChatGPT can assist with a wide range of tasks, including answering questions, providing explanations, and engaging in conversation.",
+        "version": "1.0.0",
+        "author": "OpenAI",
+        "license": "MIT"
+    }
+]
