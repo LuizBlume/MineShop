@@ -18,16 +18,18 @@
     gap: 10px;
 }
 .button {
-    font-family: 'Minecraft', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-family: 'Minecraftia', sans-serif;
+    font-size: 14px;
     display: flex;
     flex-direction: row;
     background-color: #727272;
     color: white;
+    letter-spacing: 1.3px;
     border: 1px solid #000000;
-    padding: 10px 20px;
+    padding: 10px 15px;
     cursor: pointer;
+    align-items: center;
+    text-align: center;
     &:hover {
         background-color: #535353;
     }
