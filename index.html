@@ -6,40 +6,46 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/homepage.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <title>MIneShop</title>
+    <title>MineShop</title>
 </head>
 <body id="app">
     <div class="container">
         <header>
-            <img src="./src/assets/images/minecraft.png" alt="">
+            <img src="./src/assets/images/minecraft.png" alt="Logo Minecraft">
         </header>
         <div class="main">  
             <p class="text">
-                A sua loja preferida de peronagens do Minecraft!
+                A sua loja preferida de personagens do Minecraft!
             </p>
             <ul>
                 <li v-for="link in links" :key="link.name">
-                    <button class="button">
-                    <a class="link" :href="link.url">{{ link.name }}</a>
+                    <button class="button" @click="goTo(link.url)">
+                        {{ link.name }}
                     </button>
                 </li>
             </ul>
         </div>
     </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    links: [
+                        { name: 'Overworld', url: 'overworld.html' },
+                        { name: 'Nether', url: 'nether.html' },
+                        { name: 'End', url: 'end.html' }
+                    ]
+                };
+            },
+            methods: {
+                goTo(url) {
+                    window.location.href = url;
+                }
+            }
+        }).mount('#app');
+    </script>
 </body>
 </html>
-<script>
-    const { createApp } = Vue;
-
-    createApp({
-        data() {
-            return {
-               links: [
-                    { name: 'Overworld', url: 'overworld.html' },
-                    { name: 'Nether', url: 'nether.html' },
-                    { name: 'End', url: 'end.html' }
-                ]
-            }
-        }
-    }).mount('#app');
-</script>
