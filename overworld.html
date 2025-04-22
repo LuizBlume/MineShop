@@ -1,32 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <title>OverWorld</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/overworld.css">
+  <title>Overworld</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <header class="header">
-            <div class="logo">
-                <img src="./src/assets/images/logo.png" class="logo" alt="">
+  <div id="app">
+    <header class="header">
+      <div class="logo">
+        <a href="/index.html"><img src="./src/assets/images/logo.png" class="logo" alt=""></a>
+      </div>
+      <div class="buttons">
+        <a href="/nether.html"><div class="button">Nether</div></a>
+        <a href="/end.html"><div class="button">The End</div></a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="title">
+          <h1>Principais personagens do mundo inicial, Nether!</h1>
+        </div>
+        <div class="carregando" v-if="loading">Carregando...</div>
+        <div class="character" v-for="(character, index) in characters" :key="index">
+          <div class="image-wrapper">
+            <div class="image-shadow"></div>
+            <div class="image">
+              <img :src="character.image" class="character-image" :alt="character.name">
             </div>
-            <div class="buttons">
-                <div class="button">Nether</div>
-                <div class="button">The End</div>
-            </div>
-        </header>
-    </div>
-    <script>
-        const { createApp, ref } = Vue;
-        createApp({
-            setup() {
-
-            }
-        })
-    </script>
+          </div>
+          <div class="character-title">
+            <h2 class="name-character">{{ character.name }}</h2>
+          </div>
+          <div class="character-description">
+            <p class="description-character">{{ character.description }}</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    const { createApp, ref, onMounted } = Vue;
+    createApp({
+      setup() {
+        const characters = ref([]);
+        const loading = ref(true);
+        onMounted(async () => {
+          try {
+            const res = await fetch('./src/overworld.json');
+            characters.value = await res.json();
+          } catch (erro) {
+            console.error("Erro ao carregar JSON:", erro);
+          } finally {
+            loading.value = false;
+          }
+        });
+        return { characters, loading };
+      }
+    }).mount('#app');
+  </script>
 </body>
 </html>
