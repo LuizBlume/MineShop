@@ -18,8 +18,12 @@
         <a href="/index.html"><img src="./src/assets/images/logo.png" class="logo" alt=""></a>
       </div>
       <div class="buttons">
-        <a href="/overworld.html"><div class="button">OverWorld</div></a>
-        <a href="/nether.html"><div class="button">Nether</div></a>
+        <a href="/overworld.html">
+          <div class="button">OverWorld</div>
+        </a>
+        <a href="/nether.html">
+          <div class="button">Nether</div>
+        </a>
       </div>
     </header>
     <main>
@@ -28,19 +32,20 @@
           <h1>Principais personagens do mundo final, The End!</h1>
         </div>
         <div class="carregando" v-if="loading">Carregando...</div>
-
-        <div class="character" v-for="(character, index) in characters" :key="index">
-          <div class="image-wrapper">
-            <div class="image-shadow"></div>
-            <div class="image">
-              <img :src="character.image" class="character-image" :alt="character.name">
+        <div class="characters">
+          <div class="character" v-for="(character, index) in characters" :key="index">
+            <div class="image-wrapper">
+              <div class="image-shadow"></div>
+              <div class="image">
+                <img :src="character.image" class="character-image" :alt="character.name">
+              </div>
             </div>
-          </div>
-          <div class="character-title">
-            <h2 class="name-character">{{ character.name }}</h2>
-          </div>
-          <div class="character-description">
-            <p class="description-character">{{ character.description }}</p>
+            <div class="character-title">
+              <h2 class="name-character">{{ character.name }}</h2>
+            </div>
+            <div class="character-description">
+              <p class="description-character">{{ character.description }}</p>
+            </div>
           </div>
         </div>
       </div>
