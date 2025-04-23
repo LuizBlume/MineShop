@@ -46,6 +46,11 @@ ul{
     height: 7vh;
     width: 55vw;
     font-size: 0.875rem;
+
+    &:hover{
+        background-color: #97a9fe;
+        color: yellow;
+    }
 }
 a{
     text-decoration: none;
