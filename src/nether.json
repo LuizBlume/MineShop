@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Humpty Dumpty",
+        "description": "Personagem de enorme importância no mundo Minecraft!",
+        "image": "./src/assets/images/nether/humpty-frente.png"
+    },
+    {
+        "name": "Chicken Jockey",
+        "description": "Um zumbi montado em uma galinha!",
+        "image": "./src/assets/images/nether/chicken-jockey-frente.png"
+    },
+    {
+        "name": "Cecil",
+        "description": "Cecil é um personagem que vive no Nether e é conhecido por sua habilidade em criar poções poderosas.",
+        "image": "./src/assets/images/nether/cecil-frente.png"
+    },
+    {
+        "name": "Lebron James",
+        "description": "Lebron James é um personagem que vive no Nether e é conhecido por sua habilidade em criar poções poderosas.",
+        "image": "./src/assets/images/nether/lebron-frente.png"
+    },
+    {
+        "name": "Steve Ghast",
+        "description": "Steve Ghast é um personagem que vive no Nether e é conhecido por sua habilidade em criar poções poderosas.",
+        "image": "./src/assets/images/nether/steve-ghast-frente.png"
+    }
+]

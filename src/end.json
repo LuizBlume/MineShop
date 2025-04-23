@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Omniman",
+        "description": "Omniman é um personagem que vive junto ao Ender Dragon",
+        "image": "./src/assets/images/end/omniman-frente.png"
+    },
+    {
+        "name": "Optimus Prime",
+        "description": "Optimus Prime é um personagem que vive no end e é conhecido por sua habilidade em criar poções poderosas.",
+        "image": "./src/assets/images/end/Optimus-Prime-frente.png"
+    },
+    {
+        "name": "Sonic Franchise",
+        "description": "Sonic Franchise é um personagem que vive no end e é conhecido por sua habilidade em criar poções poderosas.",
+        "image": "./src/assets/images/end/Sonic-Franchise-frente.png"
+    },
+    {
+        "name": "Technoblade",
+        "description": "Eterno Rei do End",
+        "image": "./src/assets/images/end/technoblade-frente.png"
+    },
+    {
+        "name": "Tralalero Tralala",
+        "description": "Tralalero Tralala é um personagem que vive no end e é conhecido por sua habilidade em criar poções poderosas.",
+        "image": "./src/assets/images/end/tralalero-tralala-frente.png"
+    }
+]
