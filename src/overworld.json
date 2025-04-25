@@ -2,21 +2,29 @@
     {
         "name": "Conquista",
         "description": "Conquista é um personagem que vive no overworld e é conhecido por sua habilidade em criar poções poderosas.",
-        "image": "./src/assets/images/overworld/conquista-frente.png"
+        "image": "./src/assets/images/overworld/conquista-frente.png",
+        "hover": "./src/assets/images/overworld/conquista-costas.png"
     },
     {
         "name": "Sans",
         "description": "Sans é um personagem que vive no overworld e é conhecido por sua habilidade em criar poções poderosas.",
-        "image": "./src/assets/images/overworld/sans-frente.png"
+        "image": "./src/assets/images/overworld/sans-frente.png",
+        "hover": "./src/assets/images/overworld/sans-costas.png"
+
+        
     },
     {
         "name": "Steve Redondo",
         "description": "Steve Redondo é um personagem que vive no Nether e é conhecido por sua habilidade em criar poções poderosas.",
-        "image": "./src/assets/images/overworld/steve-filme-frente.png"
+        "image": "./src/assets/images/overworld/steve-filme-frente.png",
+        "hover": "./src/assets/images/overworld/steve-filme-costas.png"
+
     },
     {
         "name": "Viltrumincible",
         "description": "Viltrumincible é um personagem que vive no overworld e é conhecido por sua habilidade em criar poções poderosas.",
-        "image": "./src/assets/images/overworld/Viltrumincible-frente.png"
+        "image": "./src/assets/images/overworld/Viltrumincible-frente.png",
+        "hover": "./src/assets/images/overworld/Viltrumincible-cosats.png"
+
     }
 ]

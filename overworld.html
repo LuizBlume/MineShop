@@ -31,7 +31,7 @@
             <div class="image-wrapper">
               <div class="image-shadow"></div>
               <div class="image">
-                <img :src="character.image" class="character-image" :alt="character.name">
+                <img @mouseover="onHover(character)"@mouseleave="onLeave(character)" :src="character.currentImage" class="character-image" :alt="character.name">
               </div>
             </div>
             <div class="character-title">
@@ -51,19 +51,35 @@
       setup() {
         const characters = ref([]);
         const loading = ref(true);
+  
+        const onHover = (character) => {
+          character.currentImage = character.hover;
+        };
+  
+        const onLeave = (character) => {
+          character.currentImage = character.image;
+        };
+  
         onMounted(async () => {
           try {
             const res = await fetch('./src/overworld.json');
-            characters.value = await res.json();
+            const data = await res.json();
+  
+            characters.value = data.map(character => ({
+              ...character,
+              currentImage: character.image
+            }));
           } catch (erro) {
             console.error("Erro ao carregar JSON:", erro);
           } finally {
             loading.value = false;
           }
         });
-        return { characters, loading };
+  
+        return { characters, loading, onHover, onLeave };
       }
     }).mount('#app');
   </script>
+  
 </body>
 </html>
