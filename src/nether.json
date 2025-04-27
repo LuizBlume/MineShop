@@ -3,30 +3,35 @@
         "name": "Humpty Dumpty",
         "description": "Personagem de enorme importância no mundo Minecraft!",
         "image": "./src/assets/images/nether/humpty-frente.png",
-        "hover": "./src/assets/images/nether/humpty-costas.png"
+        "hover": "./src/assets/images/nether/humpty-costas.png",
+        "quantidade": 10
     },
     {
         "name": "Chicken Jockey",
-        "description": "Um zumbi montado em uma galinha!",
+        "description": "Chicken Jockey é um personagem que vive no Nether e é conhecido por sua velocidade em montarias assustadoras.",
         "image": "./src/assets/images/nether/chicken-jockey-frente.png",
-        "hover": "./src/assets/images/nether/chicken-jockey-costas.png"
+        "hover": "./src/assets/images/nether/chicken-jockey-costas.png",
+        "quantidade": 10
     },
     {
         "name": "Cecil",
-        "description": "Cecil é um personagem que vive no Nether e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "Cecil é um personagem que vive no Nether e é conhecido por sua inteligência ao criar artefatos mágicos raros.",
         "image": "./src/assets/images/nether/cecil-frente.png",
-        "hover": "./src/assets/images/nether/cecil-costas.png"
+        "hover": "./src/assets/images/nether/cecil-costas.png",
+        "quantidade": 10
     },
     {
         "name": "Lebron James",
-        "description": "Lebron James é um personagem que vive no Nether e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "LeBron James é um personagem que vive no Nether e é conhecido por sua habilidade em criar poções poderosas.",
         "image": "./src/assets/images/nether/lebron-frente.png",
-        "hvoer": "./src/assets/images/nether/lebron-costas.png"
+        "hover": "./src/assets/images/nether/lebron-costas.png",
+        "quantidade": 10
     },
     {
         "name": "Steve Ghast",
-        "description": "Steve Ghast é um personagem que vive no Nether e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "Steve Ghast é um personagem que vive no Nether e é conhecido por sua força ao controlar as chamas do Nether.",
         "image": "./src/assets/images/nether/steve-ghast-frente.png",
-        "hover": "./src/assets/images/nether/steve-ghast-costas.png"
+        "hover": "./src/assets/images/nether/steve-ghast-costas.png",
+        "quantidade": 10
     }
 ]

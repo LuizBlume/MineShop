@@ -1,30 +1,37 @@
 [
     {
         "name": "Conquista",
-        "description": "Conquista é um personagem que vive no overworld e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "Conquista é um personagem que vive no Overworld e é conhecido por seu desejo infinito de superar desafios épicos.",
         "image": "./src/assets/images/overworld/conquista-frente.png",
-        "hover": "./src/assets/images/overworld/conquista-costas.png"
+        "hover": "./src/assets/images/overworld/conquista-costas.png",
+        "quantidade": 10
     },
     {
         "name": "Sans",
-        "description": "Sans é um personagem que vive no overworld e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "Sans é um personagem que vive no Overworld e é conhecido por sua habilidade em manipular o tempo durante batalhas.",
         "image": "./src/assets/images/overworld/sans-frente.png",
-        "hover": "./src/assets/images/overworld/sans-costas.png"
-
-        
+        "hover": "./src/assets/images/overworld/sans-costas.png",
+        "quantidade": 10
     },
     {
         "name": "Steve Redondo",
-        "description": "Steve Redondo é um personagem que vive no Nether e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "Steve Redondo é um personagem que vive no Overworld e é conhecido por suas aventuras lendárias retratadas em histórias épicas.",
         "image": "./src/assets/images/overworld/steve-filme-frente.png",
-        "hover": "./src/assets/images/overworld/steve-filme-costas.png"
-
+        "hover": "./src/assets/images/overworld/steve-filme-costas.png",
+        "quantidade": 10
     },
     {
         "name": "Viltrumincible",
-        "description": "Viltrumincible é um personagem que vive no overworld e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "Viltrumincible é um personagem que vive no Overworld e é conhecido por sua força brutal e sede de batalhas intermináveis.",
         "image": "./src/assets/images/overworld/Viltrumincible-frente.png",
-        "hover": "./src/assets/images/overworld/Viltrumincible-cosats.png"
-
+        "hover": "./src/assets/images/overworld/Viltrumincible-cosats.png",
+        "quantidade": 10
+    },
+    {
+        "name": "Picollo",
+        "description": "Piccolo é uma criatura amigável do Overworld, conhecida por sua agilidade e inteligência. Sempre alerta, ele explora florestas e planícies em busca de aventuras e aliados.",
+        "image": "./src/assets/images/overworld/picollo-frente.png",
+        "hover": "./src/assets/images/overworld/picollo-costas.png",
+        "quantidade": 10
     }
 ]

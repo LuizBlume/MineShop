@@ -1,36 +1,40 @@
 [
     {
         "name": "Omniman",
-        "description": "Omniman é um personagem que vive junto ao Ender Dragon",
+        "description": "Omniman é um personagem que vive no End e é conhecido por sua força esmagadora e domínio dos céus.",
         "image": "./src/assets/images/end/omniman-frente.png",
-        "hover": "./src/assets/images/end/omniman-costas.png"
+        "hover": "./src/assets/images/end/omniman-costas.png",
+        "quantidade": 10
 
     },
     {
         "name": "Optimus Prime",
-        "description": "Optimus Prime é um personagem que vive no end e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "Optimus Prime é um personagem que vive no End e é conhecido por liderar exércitos com bravura e sabedoria.",
         "image": "./src/assets/images/end/Optimus-Prime-frente.png",
-        "hover": "./src/assets/images/end/Optimus-Prime-costas.png"
+        "hover": "./src/assets/images/end/Optimus-Prime-costas.png",
+        "quantidade": 10
 
     },
     {
         "name": "Sonic Franchise",
-        "description": "Sonic Franchise é um personagem que vive no end e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "Sonic é um personagem que vive no End e é conhecido por sua velocidade inacreditável entre os mundos.",
         "image": "./src/assets/images/end/Sonic-Franchise-frente.png",
-        "hover": "./src/assets/images/end/Sonic-Franchise-costas.png"
+        "hover": "./src/assets/images/end/Sonic-Franchise-costas.png",
+        "quantidade": 10
 
     },
     {
         "name": "Technoblade",
-        "description": "Eterno Rei do End",
+        "description": "Technoblade é um personagem que vive no End e é conhecido por sua habilidade lendária em batalhas épicas.",
         "image": "./src/assets/images/end/technoblade-frente.png",
-        "hover": "./src/assets/images/end/technoblade-costas.png"
-
+        "hover": "./src/assets/images/end/technoblade-costas.png",
+        "quantidade": 10
     },
     {
         "name": "Tralalero Tralala",
-        "description": "Tralalero Tralala é um personagem que vive no end e é conhecido por sua habilidade em criar poções poderosas.",
+        "description": "Tralalero é um personagem que vive no End e é conhecido por seu jeito misterioso e canções mágicas.",
         "image": "./src/assets/images/end/tralalero-tralala-frente.png",
-        "hover": "./src/assets/images/end/tralalero-tralala-costas.png"
-    }
+        "hover": "./src/assets/images/end/tralalero-tralala-costas.png",
+        "quantidade": 10
+}
 ]

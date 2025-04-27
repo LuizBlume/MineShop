@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo do Carrinho</title>
+    <link rel="stylesheet" href="src/css/carrinho.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+</head>
+<body>
+    <div id="checkoutApp">
+        <header class="header">
+            <div class="logo">
+                <a href="/index.html"><img src="./src/assets/images/logo.png" class="logo" alt=""></a>
+            </div>
+            <h1>Carrinho de Personagens</h1>
+            <button @click="clearCart" class="clear-button">Limpar Carrinho</button>
+        </header>
+        <main>
+            <div class="cart-summary">
+                <div v-if="Object.keys(cart).length === 0">
+                    <p>Seu carrinho está vazio!</p>
+                </div>
+                <div v-else>
+                    <div v-for="(quantity, name) in cart" :key="name" class="cart-item">
+                        <h2>{{ name }}</h2>
+                        <p>Quantidade: {{ quantity }}</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const { createApp, ref, onMounted } = Vue;
+        createApp({
+            setup() {
+                const cart = ref({});
+                const clearCart = () => {
+                    localStorage.removeItem('cart');
+                    cart.value = {};
+                };
+                onMounted(() => {
+                    const storedCart = JSON.parse(localStorage.getItem('cart'));
+                    if (storedCart) {
+                        cart.value = storedCart;
+                    }
+                });
+                return { cart, clearCart };
+            }
+        }).mount('#checkoutApp');
+    </script>
+</body>
+</html>
